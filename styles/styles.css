@@ -1,0 +1,234 @@
+body {
+    font-family: Verdana;
+    color: hsl(0, 0%, 60%);
+    width: 70%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+/* For header */
+header {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+    font-family: Verdana;
+}
+
+    header a {
+        text-decoration: none;
+        color: hsl(0, 0%, 40%);
+        font-size: 14px;
+    }
+
+        header a:hover {
+            color: hsl(0, 0%, 20%);
+        }
+    header .icon {
+        display: none;
+    }
+        header .icon:hover {
+            opacity: 0.8;
+        }
+
+
+/* For section */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* For section-nav */
+nav {
+    overflow:hidden;
+    float: left;
+    width: 20%
+}
+
+    nav ul {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 6vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        color: hsl(0, 0%, 60%);
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+.group {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+.group-title {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+    .group-title a {
+        color: hsl(0, 0%, 40%);
+    }
+        .group-title a:hover {
+            color: hsl(0, 0%, 20%);
+        }
+
+
+
+.project-title {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0.2vw;
+}
+    .project-title a:hover {
+        color: hsl(0, 0%, 20%);
+    }
+
+
+.page-title {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+    .page-title a:hover {
+        color: hsl(0, 0%, 20%);
+    }
+
+/* For section - main */
+.main {
+    float: left;
+    width: 80%;
+    padding: 0;
+}
+    .main a {
+        display: block;
+        float: left;
+        width: 33.333%;
+        text-decoration: none;
+    }
+
+    .main img {
+        max-width: 100%;
+        filter: grayscale(50%);
+    }
+        .main img:hover {
+            opacity: 0.8;
+            filter: grayscale(0%);
+        }
+.project-covers {
+    display: block;
+    float: left;
+    padding: 0 0 1vw 0.5vw;
+}
+
+
+.cover-details {
+    margin-top: 0.2vw;
+    color: hsl(0, 0%, 40%);
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+    .cover-details:hover {
+        color: hsl(0, 0%, 10%);
+    }
+
+    .cover-year {
+        color: hsl(0, 0%, 60%);
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+/* For footer */
+footer {
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    font-size: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    body {
+        width: 90%;
+    }
+
+    nav {
+        width: 100%;
+    }
+    ul {
+        display: none;
+    }
+
+    .project-title {
+        display: none;
+    }
+    .group-title {
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .page-title {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        width: 20%;
+    }
+
+    .main {
+        width: 100%;
+    }
+        .main a {
+            width: 50%;
+            text-decoration: none;
+        }
+}
+
+@media only screen and (max-width: 540px) {
+    /* For mobile phones: */
+    body {
+        width: 90%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+        nav ul {
+            display: inline-block;
+            float: left;
+            width: 50%;
+        }
+
+    .project-title {
+        display: none;
+    }
+
+    .page-title {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+        .main a {
+            width: 100%;
+            text-decoration: none;
+        }
+}
