@@ -1,0 +1,266 @@
+body {
+    font-family: Verdana;
+    color: hsl(0, 0%, 60%);
+    width: 70%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+li {
+    list-style-type: none;
+}
+/* For header */
+header {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+    font-family: Verdana;
+}
+
+    header a {
+        text-decoration: none;
+        color: hsl(0, 0%, 40%);
+        font-size: 18px;
+    }
+
+        header a:hover {
+            color: hsl(0, 0%, 20%);
+        }
+
+/* For intro */
+.intro {
+    float: left;
+    width: 45%;
+    height: 500px;
+}
+.intro h{
+    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+}
+.intro h3:hover{
+    color: hsl(0, 0%, 20%);
+}
+
+
+
+
+/* For education and work */
+.education_work {
+    float: right;
+    width: 45%;
+    height: 500px;
+
+}
+
+/* For education Table*/
+.education_title{
+    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+    color:hsl(0, 0%, 30%);
+
+}
+.education{
+    margin-top: 5%;
+    width: 100%;
+}
+.education :hover{
+    color:hsl(0, 0%, 20%);
+}
+.education p{
+    margin-top:0.5%
+}
+
+
+/* For work Table*/
+.work_title{
+    margin-top: 8%;
+    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+    color:hsl(0, 0%, 30%);
+}
+.work{
+    margin-top: 2%;
+    width: 100%;
+}
+.work :hover{
+    color:hsl(0, 0%, 20%);
+}
+
+/* For website icon */
+.website_icon{
+    margin-top: 5%;
+}
+.website_icon a{
+    text-decoration: none;
+}
+.website_icon img{
+    width: 8%;
+    height: auto;
+    opacity: 0.5;
+
+}
+.website_icon img:hover{
+    opacity: 0.7;
+}
+/* For downloadcv */
+.downloadcv{
+    margin-top: 3%;
+    float: left;
+}
+.downloadcv a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(0, 0%, 40%);
+    font-size: 12px;
+    text-decoration-line: underline;
+    text-decoration-color: hsl(0, 0%, 90%);
+    text-decoration-thickness: 2px;
+}
+.downloadcv a:hover{
+    color:hsl(0, 0%, 20%);
+    text-decoration-thickness: 4px;
+}
+
+
+/* For Award Table*/
+.award_title{
+    margin-top: 100px;
+    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+    color:hsl(0, 0%, 30%);
+
+}
+.awards{
+    margin-top: 2%;
+    width: 100%;
+    line-height: 3;
+    border-spacing: 0px;
+}
+.awards td{
+    border-bottom: 1.5px solid hsl(0, 0%, 80%);
+    font-size:clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+    }
+
+    .awards tr:hover{
+        color:hsl(0, 0%, 20%);
+    }
+
+
+/* For Research Table*/
+.research_title{
+    margin-top: 100px;
+    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+    color:hsl(0, 0%, 30%);
+
+}
+.research_experience{
+    margin-top: 2%;
+    width: 100%;
+    line-height: 3;
+    border-spacing: 0px;
+}
+.research_experience td{
+    border-bottom: 1.5px solid hsl(0, 0%, 80%);
+    font-size:clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+    }
+
+    .research_experience tr:hover{
+        color:hsl(0, 0%, 20%);
+    }
+
+
+
+
+
+/* For section - main */
+.main {
+    float: left;
+    width: 80%;
+    padding: 0;
+}
+    .main a {
+        display: block;
+        float: left;
+        width: 33.333%;
+        text-decoration: none;
+    }
+
+    .main img {
+        max-width: 100%;
+        filter: grayscale(50%);
+    }
+        .main img:hover {
+            opacity: 0.8;
+            filter: grayscale(0%);
+        }
+
+
+
+/* For footer */
+footer {
+    margin-top: 10%;
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    font-size: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    body {
+        width: 90%;
+    }
+/*
+    nav {
+        width: 100%;
+    }
+    ul {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+        .main a {
+            width: 50%;
+            text-decoration: none;
+        }
+        */
+}
+
+@media only screen and (max-width: 540px) {
+    /* For mobile phones: */
+    body {
+        width: 90%;
+    }
+    .intro{
+        width: 100%;
+    }
+    .education_work{
+        width: 100%;
+    }
+
+
+/*    nav {
+        width: 100%;
+    }
+
+        nav ul {
+            display: inline-block;
+            float: left;
+            width: 50%;
+        }
+
+    .main {
+        width: 100%;
+    }
+
+        .main a {
+            width: 100%;
+            text-decoration: none;
+        }
+        */
+}
