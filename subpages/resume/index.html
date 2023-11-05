@@ -3,53 +3,84 @@
 <head>
     <meta charset="utf-8" name="Zilin Zhou" content="This is my RESUME." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\resume_styles.css" />
+    <link rel="stylesheet" href="../../styles\resume_styles.css" />
+
     <title>ZilinZhouDesign</title>
     <link rel="icon" href="images\icons\favicon_grey.png" />     <!-- 检查是否成功链接 -->
 </head>
 <body>
 
-    <!-- header -->
-    <header>
-        <a href="#"><b>Zilin Zhou</b></a>
-    </header>
+    <script src="../../scripts/resume_script.js"></script>
+  
+    <!-- fixed header -->
+    <div class="fixed_header_nav_for_desktop">
+        <div class="fixed_header">
+            <a href="../../index.html">Zilin Zhou</a>
+        </div>
+        <div class="fixed_nav">
+            <ul class="nav_links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- fixed hamburger header -->
+    <div class="fixed_header_nav_hamburger">
+        <div class="fixed_header">
+            <a href="../../index.html">Zilin Zhou</a>
+        </div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu_links">
+                <li><a href="#architecture" onclick="toggleMenu()">Architecture</a></li>
+                <li><a href="#installation" onclick="toggleMenu()">Installation</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            </div>
+
+        </div>
+    </div>
 
     <!-- introduction-->
-    <div class="intro">
-        <br/><br/><br/>
-        <h3>Hey there, I am an designer! <br/><br/></h3>
-        <h>
-            Presently, I am actively engaged in the field as an architect at OPEN Architecture, focusing on the creation of innovative and pragmatic architectural solutions. 
-            My interests lie in the realm of bespoke furniture crafting, explorations of novel materials, and the exploration of interdisciplinary approaches to foster cutting-edge design concepts.</h>
-        <br/>
+    <div class="introduction">
+        <div class="intro_img">
+            <img src="../../images/about/me.png" alt="zilinzhou picture"/>
+        </div>
+        <div class="intro_text">
+            <p class="intro_p1">Hello, I'm</p>
+            <h1 class="intro_title">Zilin Zhou</h1>
+            <p class="intro_p2">Architect and Designer</p>
 
-        <!-- download CV-->
-         <div class="downloadcv">
-              <a href="cv_file\CV_ZILINZHOU.pdf">Download Resume</a>
-         </div>
-         <br />
+            <div class="btn_container">
+                <!-- download CV-->
+                    <button class="btn_download" onclick="window.open('../../files/CV_ZILINZHOU.pdf')">Download CV</button>
+                <!-- contact-->
+                    <button class="btn_contact" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
 
-         <!-- link to other wenbsites-->
-         <div class="website_icon">
-            <a href="https://www.linkedin.com/in/zilinzhoudesign/" target="_blank">
-                <img src="../../images\icons\linkedin.png">
-            </a>
-            <a href="url" target="_blank">
-                <img src="../../images\icons\ins.png">
-            </a>
-            <a href="https://issuu.com/zilinzhou" target="_blank">
-                <img src="../../images\icons\issuu.png">
-            </a>
+             <!-- link to other websites-->
+            <div class="website_icon">
+                <a href="https://www.linkedin.com/in/zilinzhoudesign/" target="_blank">
+                    <img src="../../images\icons\linkedin.png">
+                </a>
+                <a href="url" target="_blank">
+                    <img src="../../images\icons\ins.png">
+                </a>
+                <a href="https://issuu.com/zilinzhou" target="_blank">
+                    <img src="../../images\icons\issuu.png">
+                </a>
+            </div>
 
-         </div>
-         
+        </div>
 
     </div>
 
-
     <!-- Education and work table-->
     <div class="education_work">
-
             <!-- education table-->
          <div class="education_title">
            <h1>EDUCATION</h1>
