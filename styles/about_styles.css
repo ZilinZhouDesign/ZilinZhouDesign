@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     margin: 0;
 }
@@ -16,7 +15,6 @@ header{
     top:0;
     left:0;
     height: 100px;
-    z-index: 999999;
 }
 
 ul{
@@ -144,47 +142,6 @@ main,header{
     padding: 0 40px;
 }
 
-/* architecture projects  */
-#architecture_projects a{
-    display: block;
-    width: 48%;
-    float: left;
-    text-decoration: none;
-}
-.project-covers {
-    display: block;
-    float: left;
-    padding: 1vw 1%;
-}
-
-.cover-images img{
-    max-width: 100%;
-    filter: grayscale(50%);
-}
-.cover-images img:hover{
-    opacity: 0.8;
-    filter: grayscale(0%);
-    transition: all 600ms ease;
-
-}
-
-.cover-details {
-    margin-top: 0.2vw;
-    color: hsl(0, 0%, 40%);
-    text-decoration: none;
-    font-size: 12px;
-    
-}
-    .cover-details:hover {
-        color: hsl(0, 0%, 10%);
-    }
-
-    .cover-year {
-        color: hsl(0, 0%, 60%);
-        text-decoration: none;
-        font-size: 10px;
-    }
-
 /* Main-hero section */
 #hero img{
     margin-top: 30px;
@@ -241,7 +198,53 @@ button{
     color:hsl(0, 0%, 80%);
 }
 
+/* Main-education and work section */
+#education{
+    margin-top: 150px;
+}
+#work,#award,#research,#award_iphone,#research_iphone{
+    margin-top: 70px;
+}
+#education h1,#work h1,#award h1,#research h1,#award_iphone h1,#research_iphone h1{
+    margin-bottom: 0;
+    font-weight:bolder;
+}
+.degree_bachelor,.degree_master,.work_experience,.award_single,.research_single{
+    background-color: rgba(234, 234, 234, 0.3); 
+    padding: 5px;
+    margin: 10px 0;
+}
+.title{
+    font-size: large;
+}
+#education p, #work p{
+    margin: 5px 0;
+}
 
+
+
+/* main-award and research_experience section  */
+.awards, .research_experience{
+    margin-top: 2%;
+    width: 100%;
+    line-height: 3;
+    border-spacing: 0px;
+}
+.awards td,.research_experience td{
+    border-bottom: 1.5px solid hsl(0, 0%, 90%);
+    font-size:clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+    }
+
+    .awards tr:hover, .research_experience tr:hover{
+        background-color: rgba(234, 234, 234, 0.3); 
+    }
+
+
+
+/* for iphone , award and research  */
+#award_iphone,#research_iphone{
+    display: none;
+}
 
 
 /* arrow to go to top button  */
@@ -273,10 +276,8 @@ button{
 
 /* For footer */
 footer {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
     margin-top: 70px;
+    text-align: center;
     color: hsl(0, 0%, 60%);
 }
 

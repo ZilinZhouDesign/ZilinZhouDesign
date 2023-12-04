@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     margin: 0;
 }
@@ -9,6 +8,7 @@ body{
 /* for header  */
 header{
     position: sticky;
+    z-index: 999;
     background-color: white;
     display: flex; 
     justify-content: space-between;
@@ -16,7 +16,6 @@ header{
     top:0;
     left:0;
     height: 100px;
-    z-index: 999999;
 }
 
 ul{
@@ -143,15 +142,164 @@ main,header{
     max-width: 1100px;
     padding: 0 40px;
 }
-
-/* architecture projects  */
-#architecture_projects a{
-    display: block;
-    width: 48%;
-    float: left;
-    text-decoration: none;
+p{
+    text-align: justify;
 }
-.project-covers {
+
+/* Main-article title section */
+.Project_Name h1{
+    font-size:xx-large;
+    font-weight: 100;
+    margin: 0;
+}
+#article_title{
+    position: sticky;
+    background-color: white;
+    top:100px;
+    left:0;
+    height: 50px;
+    z-index: 99;
+}
+#article_cover img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/* article intro part  */
+#article_intro{
+    height: auto; /*调节整个container高度*/
+    gap: 20px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.Project_Intro{
+    width: 50%;
+}
+.Project_detail{
+    width: 30%;
+}
+.Project_detail h3,.Project_text h3{
+    margin: 0 0 10px 0;
+}
+.Project_detail p,.Project_Intro p{
+    margin: 0 0 10px 0;
+}
+
+/* article content part  */
+#article_text_image{
+    /* height: 600px; 调节整个container高度 */
+    height: auto;
+    gap: 20px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.Project_img{
+    width: 55%;
+
+}
+.Project_text{
+    width: 40%;
+}
+
+.Project_img img{
+    width: 100%;
+}
+.Project_text h3{
+    margin: 0;
+    font-size: xx-large;
+}
+.Project_text p{
+    text-align: justify;
+}
+
+
+
+/* imgs package  */
+
+.wrapper{
+    margin-top: 50px;
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    opacity: 0.7;
+    /* border-radius: 50%; */
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: 0;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: 0;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: 50%;
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+
+
+/* fade in  */
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+.fade-in.appear {
+    opacity: 1;
+}
+
+
+/* related_projects */
+#related_projects{
+    margin-top: 50px;
+}
+#related_projects a{
+    width: 30%;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.related_project_covers {
     display: block;
     float: left;
     padding: 1vw 1%;
@@ -167,80 +315,6 @@ main,header{
     transition: all 600ms ease;
 
 }
-
-.cover-details {
-    margin-top: 0.2vw;
-    color: hsl(0, 0%, 40%);
-    text-decoration: none;
-    font-size: 12px;
-    
-}
-    .cover-details:hover {
-        color: hsl(0, 0%, 10%);
-    }
-
-    .cover-year {
-        color: hsl(0, 0%, 60%);
-        text-decoration: none;
-        font-size: 10px;
-    }
-
-/* Main-hero section */
-#hero img{
-    margin-top: 30px;
-    width: 100%;
-}
-.container{
-    height: 200px; /*调节整个container高度*/
-    gap: 20px;
-    display: flex;
-    margin-top: 50px;
-}
-.intro_right,.intro_left{
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    width: 50%;
-    justify-content: space-between;
-}
-.intro_left p{
-    margin-bottom: 30px;
-}
-.intro_left h2{
-    margin: 5px 0;
-}
-.intro_right p, .intro_left p{
-    text-align: justify;
-    margin-top: 0;
-}
-/* buttons */
-.btn_container{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-button{
-    font-weight: 300;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width:6rem;
-    border-radius: 1rem;
-}
-.btn_download,.btn_contact{
-    border: hsl(0, 0%, 20%) 0.1rem solid;
-    background-color: white;
-    color:hsl(0, 0%, 30%);
-    text-decoration: none;
-    font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
-    
-
-} 
-.btn_download:hover,.btn_contact:hover{
-    background-color: hsl(0, 0%, 20%);
-    color:hsl(0, 0%, 80%);
-}
-
 
 
 

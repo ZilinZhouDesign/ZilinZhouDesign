@@ -1,0 +1,91 @@
+@media screen and (max-width: 1400px) {
+
+  }
+  
+  @media screen and (max-width: 1200px) {
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    #desktop-nav {
+        display: none;
+      }
+      #hamburger-nav {
+        display: flex;
+      }
+
+      /* architecture projects  */
+      #architecture_projects a{
+        width: 100%;
+    }
+    .project-covers {
+        padding: 2vw 0;
+    }
+
+     /* article layouts  */
+     .Project_Intro,.Project_detail,.Project_img,.Project_text{
+      width: 100%;
+      margin-top: 30px;
+    } 
+    #article_intro,#article_text_image{
+      display:unset;
+    }
+
+  
+   
+
+      /* font size   */
+      p{
+        font-size: 0.5rem;
+      }
+      h2{
+        font-size: 0.9rem;
+      }
+      h3,.Project_text h3{
+        font-size: 0.8rem;
+      }
+      h1,.Project_Name h1{
+        font-size: 1rem;
+      }
+      .title{
+        font-size: 0.9rem;
+      }
+      .related_project_covers p{
+        margin-top: 0;
+      }
+
+
+      .Project_detail h3,.Project_text h3,.Project_detail p,.Project_Intro p{
+        margin: 0 0 5px 0;
+      }
+
+
+
+    .container{
+        height: 130px; /*调节整个container高度*/
+    }
+    .intro_left{
+        display: none;
+    }
+    .intro_right{
+        width: 100%;
+    }
+
+
+    /* show award and research  */
+    #award,#research{
+        display: none;
+    }
+    #award_iphone,#research_iphone{
+        display: block;
+    }
+
+
+    /* img slider  */
+    .carousel img{
+      width: 100%;
+    }
+  
+
+  }
+  
