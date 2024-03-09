@@ -85,6 +85,14 @@
     .carousel img{
       width: 100%;
     }
+
+    /* img list  */
+    #img_list img{
+      width: 100%;
+    }
+    #img_list{
+      display:block;
+    }
   
 
   }
