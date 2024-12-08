@@ -185,6 +185,87 @@ main,header{
         font-size: 10px;
     }
 
+
+/* GPT */
+/* 项目卡片样式 */
+.project-covers {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* 确保图片和悬浮层都不超出框架 */
+    width: 48%; /* 保持卡片宽度 */
+    margin-bottom: 20px;
+    text-decoration: none;
+    height: auto; /* 自动适应图片高度 */
+    border-radius: 8px; /* 可选：为卡片增加圆角 */
+}
+
+/* 图片容器样式 */
+.project-covers .cover-images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 确保图片内容不会超出框架 */
+    position: relative; /* 保证图片和背景能够共用相同位置 */
+}
+
+.project-covers .cover-images img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease; /* 添加动画效果 */
+    object-fit: cover; /* 确保图片填充框架且保持比例 */
+}
+
+.project-covers:hover .cover-images img {
+    transform: scale(1.05); /* 图片内容略微放大 */
+    filter: brightness(100%) saturate(100%); /* 提高亮度和饱和度 */
+}
+
+/* 悬浮层样式 */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* 初始隐藏 */
+    transition: opacity 0.5s ease; /* 文字渐现 */
+    z-index: 1; /* 确保悬浮层位于顶部 */
+    overflow: hidden; /* 确保背景不会超出框架 */
+}
+
+/* 悬浮时显示 */
+.project-covers:hover .project-overlay {
+    opacity: 1; /* 仅透明度渐变 */
+}
+
+/* 项目名称样式 */
+.project-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 地点和时间样式 */
+.project-overlay p {
+    font-size: 0.9rem; /* 较小字体 */
+    margin: 0.2rem 0;
+    opacity: 0.8; /* 添加透明度 */
+}
+
+
+/* GPT */
+
+
+
+
+
+
 /* Main-hero section */
 #hero img{
     margin-top: 30px;
