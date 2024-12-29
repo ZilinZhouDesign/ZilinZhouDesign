@@ -1,309 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8" name="Zilin Zhou" content="This is my RESUME." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZilinZhouDesign</title>
-    <link rel="icon" href="images\icons\favicon_grey.png" />   
-
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/icons/zilin_logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- JS  -->
-    <script src="scripts/script.js"></script>
-
-    <!-- header part -->
     <header>
-        <a href="index.html">Zilin Zhou</a>
-        <nav id="desktop-nav">
-            <ul>
-                <li><a href="index.html">Architecture</a></li>
-                <li><a href="Installation.html">Installation</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-        </nav>
-
-        <!-- hamburger-nav  -->
-        <nav id="hamburger-nav">
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links">
-                <li><a href="index.html" onclick="toggleMenu()">Architecture</a></li>
-                <li><a href="installation.html" onclick="toggleMenu()">Installation</a></li>
-                <li><a href="About.html" onclick="toggleMenu()">About</a></li>
-              </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html">ZilinZhouDesign</a>
             </div>
-          </nav>
-
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="has-submenu">Projects</a>
+                <div class="project-filters mobile-only">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="en">All Projects</span>
+                        <span class="zh">全部项目</span>
+                    </button>
+                    <button class="filter-btn" data-category="education">
+                        <span class="en">Education & Culture</span>
+                        <span class="zh">文化教育</span>
+                    </button>
+                    <button class="filter-btn" data-category="pavilion">
+                        <span class="en">Pavilion & Bridge</span>
+                        <span class="zh">建筑小品</span>
+                    </button>
+                    <button class="filter-btn" data-category="research">
+                        <span class="en">Research</span>
+                        <span class="zh">研究类设计</span>
+                    </button>
+                </div>
+                <a href="about.html">About</a>
+                <div class="language-switch">
+                    <span class="en active">EN</span>
+                    <span class="separator">|</span>
+                    <span class="zh">中</span>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-
-        <section id="architecture_projects">
-
-            <!-- 26  Shede Museum-->
-            <a class="project-covers" href="Architecture/26-Shede-Museum.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project26\cover.jpg">
-                </div>
-                <div class="project-overlay">
-                    <h3>Shede Museum</h3>
-                    <p>Location: China</p>
-                    <p>Year: 2023</p>
-                </div>
-                <!-- <div class="cover-details">Shede Museum</div> -->
-                <!-- <div class="cover-year">2023</div> -->
-            </a>
-
-            <!-- 25  Boat Auditorium-->
-            <a class="project-covers" href="Architecture/25-Boat-Auditorium.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project25\cover.jpg">
-                </div>
-                <div class="cover-details">Boat Auditorium</div>
-                <div class="cover-year">2023</div>
-            </a>
-
-            <!-- 24  Yichang Theater-->
-            <a class="project-covers" href="Architecture/24-Yichang-Theater.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project24\cover.jpg">
-                </div>
-                <div class="cover-details">Yichang Theater</div>
-                <div class="cover-year">2023</div>
-            </a>
-
-            <!-- 23  Seam Bridge-->
-            <a class="project-covers" href="Architecture/23-Seam-Bridge.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project23\cover.jpg">
-                </div>
-                <div class="cover-details">Seam Bridge</div>
-                <div class="cover-year">2023</div>
-            </a>
-
-            <!-- 22  Chain In Maastricht-->
-            <a class="project-covers" href="Architecture/22-Chain-In-Maastricht.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project22\cover.jpg">
-                </div>
-                <div class="cover-details">Chain In Maastricht</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 21  Smart Paper Factory-->
-            <a class="project-covers" href="Architecture/21-Smart-Paper-Factory.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project21\cover.jpg">
-                </div>
-                <div class="cover-details">Smart Paper Factory</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 20  Green Pedestrian Bridge-->
-            <a class="project-covers" href="Architecture/20-Green-Pedestrian-Bridge.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project20\cover.jpg">
-                </div>
-                <div class="cover-details">Green Pedestrian Bridge</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 19  Jiaxing Pedestrian Bridge-->
-            <a class="project-covers" href="Architecture/19-Jiaxing-Pedestrian-Bridge.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project19\cover.jpg">
-                </div>
-                <div class="cover-details">Jiaxing Pedestrian Bridge</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 18  LOOP Bamboo Pavilion-->
-            <a class="project-covers" href="Architecture/18-LOOP-Bamboo-Pavilion.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project18\cover.jpg">
-                </div>
-                <div class="cover-details">LOOP Bamboo Pavilion</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 17  Bird Observation Platform-->
-            <a class="project-covers" href="Architecture/17-Bird-Observation-Platform.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project17\cover.jpg">
-                </div>
-                <div class="cover-details">Bird Observation Platform</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 16  Cable Station-->
-            <a class="project-covers" href="Architecture/16-Cable-Station.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project16\cover.jpg">
-                </div>
-                <div class="cover-details">Cable Station</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-
-            <!-- 15 Moon Pavilion-->
-            <a class="project-covers" href="Architecture/15-Moon-Pavilion.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project15\cover.jpg">
-                </div>
-                <div class="cover-details">Moon Pavilion</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 14 Ring Pavilion-->
-            <a class="project-covers" href="Architecture/14-Ring-Pavilion.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project14\cover.jpg">
-                </div>
-                <div class="cover-details">Ring Pavilion</div>
-                <div class="cover-year">2022</div>
-            </a>
-
-            <!-- 13 The Last Nuclear Bomb Memorial-->
-            <a class="project-covers" href="Architecture/13-Nuclear-Bomb-Memorial.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project13\cover.jpg">
-                </div>
-                <div class="cover-details">The Last Nuclear Bomb Memorial</div>
-                <div class="cover-year">2021</div>
-            </a>
-
-            <!-- 12 Superposition Expansion-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project12\cover.jpg">
-                </div>
-                <div class="cover-details">Superposition Expansion</div>
-                <div class="cover-year">2021</div>
-            </a>
-
-            <!-- 11 Why Not Paper Architecture-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project11\cover.jpg">
-                </div>
-                <div class="cover-details">Why Not Paper Architecture</div>
-                <div class="cover-year">2021</div>
-            </a>
-
-            <!-- 10 Move With The Wind-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project10\cover.jpg">
-                </div>
-                <div class="cover-details">Move With The Wind</div>
-                <div class="cover-year">2020</div>
-            </a>
-
-            <!-- 9  The Lagartixa Hybrid System-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project9\cover.jpg">
-                </div>
-                <div class="cover-details">The Lagartixa Hybrid System</div>
-                <div class="cover-year">2020</div>
-            </a>
-
-            <!-- 8  Sanlin Software Park-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project8\cover.jpg">
-                </div>
-                <div class="cover-details">Sanlin Software Park</div>
-                <div class="cover-year">2020</div>
-            </a>
-
-            <!-- 7  Form Follows Force-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project7\cover.jpg">
-                </div>
-                <div class="cover-details">Form Follows Force</div>
-                <div class="cover-year">2020</div>
-            </a>
-
-            <!-- 6  Origami Wing-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project6\cover.jpg">
-                </div>
-                <div class="cover-details">Origami Wing</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-            <!-- 5  Form Finding Via Machine Learning-->
-            <a class="project-covers" href="#">
-                <div class="cover-images">
-                    <img src="images\projects\Project5\cover.jpg">
-                </div>
-                <div class="cover-details">Form Finding Via Machine Learning</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-            <!-- 4  Filament Winding Structure-->
-            <a class="project-covers" href="Architecture/4-Filament-Winding-Structure.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project4\cover.jpg">
-                </div>
-                <div class="cover-details">Filament Winding Structure</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-            <!-- 3 Inverted City Monument -->
-            <a class="project-covers" href="Architecture/3-Inverted-City-Monument.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project3\cover.jpg">
-                </div>
-                <div class="cover-details">Inverted City Monument</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-            <!-- 2 Stockholm Timber Centre -->
-            <a class="project-covers" href="Architecture/2-Stockholm-Timber-Center.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project2\cover.jpg">
-                </div>
-                <div class="cover-details">Stockholm Timber Centre</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-            <!-- 1 Nature-Inspired High-rise -->
-            <a class="project-covers" href="Architecture/1-Nature-Inspired-Highrise.html">
-                <div class="cover-images">
-                    <img src="images\projects\Project1\cover.jpg" alt="higirise">
-                </div>
-                <div class="cover-details">Nature-Inspired High-rise</div>
-                <div class="cover-year">2019</div>
-            </a>
-
-        </section>
-
-
-        <!-- back to top button  -->
-        <a href="#" class="back_to_top">
-            <span class="material-symbols-outlined">
-                ↑
-                <!-- arrow_upward -->
-                </span>
-        </a>
+        <div class="grid-container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="all">
+                    <span class="en">All Projects</span>
+                    <span class="zh">全部项目</span>
+                </button>
+                <button class="filter-btn" data-category="education">
+                    <span class="en">Education & Culture</span>
+                    <span class="zh">文化教育</span>
+                </button>
+                <button class="filter-btn" data-category="pavilion">
+                    <span class="en">Pavilion & Bridge</span>
+                    <span class="zh">建筑小品</span>
+                </button>
+                <button class="filter-btn" data-category="research">
+                    <span class="en">Research</span>
+                    <span class="zh">研究类设计</span>
+                </button>
+            </div>
+            <section id="projects-grid">
+                <!-- 将由 JavaScript 生成的项目卡片结构应该类似这样: -->
+                <!-- <div class="project-card">
+                        <div class="image-wrapper">
+                            <img src="..." alt="...">
+                        </div>
+                        <div class="project-info">
+                            <h3>项目标题</h3>
+                            <p>项目描述</p>
+                        </div>
+                    </div> -->
+            </section>
+        </div>
     </main>
-
-    
-    <footer>
-        <p>©copyright zilinzhoudesign.com</p>
-    </footer>
-    
+    <script src="js/main.js"></script>
 </body>
-</html>
+</html> 

@@ -1,342 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8" name="Zilin Zhou" content="This is my RESUME." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/about_styles.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" />
-
-    <title>ZilinZhouDesign</title>
-    <link rel="icon" href="images\icons\favicon_grey.png" />   
-
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ZilinZhouDesign</title>
+    <link rel="icon" type="image/png" href="images/icons/zilin_logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- JS  -->
-    <script src="scripts/script.js"></script>
-
-    <!-- header part -->
     <header>
-        <a href="index.html">Zilin Zhou</a>
-        <nav id="desktop-nav">
-            <ul>
-                <li><a href="index.html">Architecture</a></li>
-                <li><a href="installation.html">Installation</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-        </nav>
-
-        <!-- hamburger-nav  -->
-        <nav id="hamburger-nav">
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links">
-                <li><a href="index.html" onclick="toggleMenu()">Architecture</a></li>
-                <li><a href="installation.html" onclick="toggleMenu()">Installation</a></li>
-                <li><a href="About.html" onclick="toggleMenu()">About</a></li>
-              </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html">ZilinZhouDesign</a>
             </div>
-          </nav>
-
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="has-submenu">Projects</a>
+                <div class="project-filters mobile-only">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="en">All Projects</span>
+                        <span class="zh">全部项目</span>
+                    </button>
+                    <button class="filter-btn" data-category="education">
+                        <span class="en">Education & Culture</span>
+                        <span class="zh">文化教育</span>
+                    </button>
+                    <button class="filter-btn" data-category="pavilion">
+                        <span class="en">Pavilion & Bridge</span>
+                        <span class="zh">建筑小品</span>
+                    </button>
+                    <button class="filter-btn" data-category="research">
+                        <span class="en">Research</span>
+                        <span class="zh">研究类设计</span>
+                    </button>
+                </div>
+                <a href="about.html">About</a>
+                <div class="language-switch">
+                    <span class="en active">EN</span>
+                    <span class="separator">|</span>
+                    <span class="zh">中</span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <figure>
-                <img src="images/about/me.jpg" alt="">
-            </figure>
-            <div class="container">
-                <div class="intro_left">
-                    <p>Areas of Expertise</p>
-                    <h2>Architecture</h2>
-                    <h2>Furniture Design</h2>
-                    <h2>Web Design</h2>
+    <main class="about-container">
+        <div class="profile-section">
+            <img src="about/me.jpg" alt="Zilin Zhou" class="profile-image">
+            <div class="about-content">
+                <h1>
+                    <span class="en active">Zilin Zhou</span>
+                    <span class="zh">周子琳</span>
+                </h1>
+                <p class="bio">
+                    <span class="role">
+                        <span class="en active">Architect X designer</span>
+                        <span class="zh">建筑师 X 设计师</span>
+                    </span>
+                    <br><br>
+                    <span class="en active">My mission is to craft living spaces that captivate with intrigue and poetry, resonating harmoniously with nature, animals, and the local community. Simultaneously, I am engrossed in the study of digitized design methodologies, aiming to broaden the dimensions of architectural design through interactive approaches.</span>
+                    <span class="zh">我的使命是创造富有诗意的生活空间，与自然、动物和当地社区和谐共鸣。同时，我专注于数字化设计方法的研究，旨在通过交互式方法拓展建筑设计的维度。</span>
+                </p>
+
+                <div class="section">
+                    <h2>
+                        <span class="en active">EDUCATION</span>
+                        <span class="zh">教育经历</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="year">2020-2022</span>
+                            <div class="detail-group">
+                                <div class="school">
+                                    <span class="en active">Delft University of Technology</span>
+                                    <span class="zh">代尔夫特理工大学</span>
+                                </div>
+                                <div class="major">
+                                    <span class="en active">Master of Science in Architecture, Urbanism and Building Sciences（Track Architecture）</span>
+                                    <span class="zh">建筑学硕士</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="en active">Sino-Dutch Bilateral Exchange Scholarship</span>
+                                    <span class="zh">中荷互换奖学金</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">2015-2020</span>
+                            <div class="detail-group">
+                                <div class="school">
+                                    <span class="en active">Nanjing University</span>
+                                    <span class="zh">南京大学</span>
+                                </div>
+                                <div class="major">
+                                    <span class="en active">Bachelor of Architecture in Engineering</span>
+                                    <span class="zh">建筑工学学士</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="intro_right">
-                    <p>Hi, I'm Zilin Zhou, an architect and designer. </p>
-                    <p>
-                        My mission is to craft living spaces that captivate with intrigue and poetry, 
-                        resonating harmoniously with nature, animals, and the local community. 
-                        Simultaneously, I am engrossed in the study of digitized design methodologies, 
-                        aiming to broaden the dimensions of architectural design through interactive approaches. 
-                    </p>
-                    <div class="btn_container">
-                        <!-- download CV-->
-                            <button class="btn_download" onclick="window.open('files/CV_ZILINZHOU.pdf')">CV</button>
-                        <!-- contact-->
-                            <button class="btn_contact" onclick="location.href='mailto:zilinzhoudesign@gmail.com'">Contact</button>
-                    </div>
+
+                <div class="section">
+                    <h2>
+                        <span class="en active">WORK</span>
+                        <span class="zh">工作经历</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="year">2024-Present</span>
+                            <div class="detail-group">
+                                <div class="company">
+                                    <span class="en active">Tsinghua University</span>
+                                    <span class="zh">清华大学</span>
+                                </div>
+                                <div class="position">
+                                    <span class="en active">WX Studio - Architectural research assistant</span>
+                                    <span class="zh">黄蔚欣工作室 - 建筑研究助理</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">2022-2024</span>
+                            <div class="detail-group">
+                                <div class="company">
+                                    <span class="en active">OPEN Architecture</span>
+                                    <span class="zh">OPEN建筑事务所</span>
+                                </div>
+                                <div class="position">
+                                    <span class="en active">Architect</span>
+                                    <span class="zh">建筑师</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">2020</span>
+                            <div class="detail-group">
+                                <div class="company">
+                                    <span class="en active">Roboticplus.AI (Shanghai) Co Ltd</span>
+                                    <span class="zh">上海大界机器人科技有限公司</span>
+                                </div>
+                                <div class="position">
+                                    <span class="en active">Parametric Construction Intern</span>
+                                    <span class="zh">参数化建造实习生</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section award-section">
+                    <h2>
+                        <span class="en active">AWARD</span>
+                        <span class="zh">获奖经历</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="year">2024</span>
+                            <div class="detail-group">
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Competition for Service Facility of Airport Runway Park of Nanjing Dajiaochang</span>
+                                        <span class="zh">南京大校场机场跑道公园服务设施国际设计竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Shortlist</span>
+                                        <span class="zh">入围奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Individual Work</span>
+                                        <span class="zh">个人作品</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">2023</span>
+                            <div class="detail-group">
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">The ILLUMANATE Living Building Challenge (LBC)Competition</span>
+                                        <span class="zh">ILLUMANATE可持续生活建筑挑战竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">People's Choice Award</span>
+                                        <span class="zh">观众选择奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Team Work</span>
+                                        <span class="zh">团队作品</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Moganshan Seven Bridges Conceptual Design Competition</span>
+                                        <span class="zh">莫干山七桥概念设计竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Shortlist</span>
+                                        <span class="zh">入围奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Individual Work</span>
+                                        <span class="zh">个人作品</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">The Architect TEAMZERO Award</span>
+                                        <span class="zh">天作杯-城市链条</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">The Excellence Prize</span>
+                                        <span class="zh">优秀奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Individual Work</span>
+                                        <span class="zh">个人作品</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="year">2022</span>
+                            <div class="detail-group">
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Competition for Chengnan River Landscape Footbridge in Nanjing</span>
+                                        <span class="zh">南京城南河景观步行桥竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Nominated Awards</span>
+                                        <span class="zh">提名奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Lead Architect</span>
+                                        <span class="zh">主创建筑师</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Viewing Pavilion Micro Building International Competition</span>
+                                        <span class="zh">南京城南河景观步行桥竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">First Prize</span>
+                                        <span class="zh">一等奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Individual Work</span>
+                                        <span class="zh">个人作品</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Jiaxing Footbridge Crossing Huancheng River and Railway Competition</span>
+                                        <span class="zh">嘉兴大桥跨越杭甬河和铁路竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">TOP 30</span>
+                                        <span class="zh">前30名</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Lead Architect</span>
+                                        <span class="zh">主创建筑师</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Schematic Design of the Nodes in Central Ecological Corridor of Wuhan</span>
+                                        <span class="zh">武汉中心生态走廊节点设计竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Third Prize</span>
+                                        <span class="zh">三等奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Lead Architect</span>
+                                        <span class="zh">主创建筑师</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="year">2020</span>
+                            <div class="detail-group">
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">Green Architecture National Design Competition</span>
+                                        <span class="zh">绿色建筑国家设计竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Third Prize</span>
+                                        <span class="zh">三等奖</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Lead Architect</span>
+                                        <span class="zh">主创建筑师</span>
+                                    </div>
+                                </div>
+
+                                <div class="award-group">
+                                    <div class="competition">
+                                        <span class="en active">International 3D Printing & Design Competition</span>
+                                        <span class="zh">国际3D打印与设计竞赛</span>
+                                    </div>
+                                    <div class="award-info">
+                                        <span class="en active">Excellent Team</span>
+                                        <span class="zh">优秀团队</span>
+                                    </div>
+                                    <div class="project-type">
+                                        <span class="en active">Team Work</span>
+                                        <span class="zh">团队作品</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="section research-section">
+                    <h2>
+                        <span class="en active">RESEARCH</span>
+                        <span class="zh">研究经历</span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="year">2022</span>
+                            <div class="detail-group">
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">9th Bi-City Biennale of Urbanism\Architecture</span>
+                                        <span class="zh">第九届深港城市\建筑双城双年展</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">Short-term Installation Design Research</span>
+                                        <span class="zh">短期装置设计研究</span>
+                                    </div>
+                                </div>
+
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">DigitalFUTURES2022 Workshop</span>
+                                        <span class="zh">数字未来2022工作坊</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">Robotic Manufacturing of Timber Space-frames</span>
+                                        <span class="zh">木结构空间框架机器人制造</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="year">2020</span>
+                            <div class="detail-group">
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">DigitalFUTURES2020 Workshop</span>
+                                        <span class="zh">数字未来2020工作坊</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">HI-Cy: Hybrid Intelligence Cy-Matters</span>
+                                        <span class="zh">混合智能数字物质研究</span>
+                                    </div>
+                                </div>
+
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">2019 International Conference on Computational Design & Robotic Fabrication</span>
+                                        <span class="zh">2019计算设计与机器人建造国际会议</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">Second Author, "Application of Algorithmic Generation to Kindergarten Design" Research Paper</span>
+                                        <span class="zh">第二作者，"算法生成在幼儿园设计中的应用"研究论文</span>
+                                    </div>
+                                </div>
+
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">Cinematic Museum of the Everyday, Cambridge University</span>
+                                        <span class="zh">日常电影博物馆，剑桥大学</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">A Workshop on Cinematic Architecture</span>
+                                        <span class="zh">电影建筑工作坊</span>
+                                    </div>
+                                </div>
+
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">Undergraduate Academic Research Program, Nanjing University</span>
+                                        <span class="zh">南京大学本科生科研项目</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">Gender Studies</span>
+                                        <span class="zh">性别研究</span>
+                                    </div>
+                                </div>
+
+                                <div class="research-group">
+                                    <div class="project-name">
+                                        <span class="en active">Artificial Intelligence Interaction Workshop</span>
+                                        <span class="zh">人工智能交互工作坊</span>
+                                    </div>
+                                    <div class="research-role">
+                                        <span class="en active">Building interactive experience in VR through 3DUnity</span>
+                                        <span class="zh">通过3DUnity构建VR交互体验</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/zilinzhoudesign/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zilinzhou0121/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:zilinzhoudesign@gmail.com" aria-label="Email">
+                        <i class="far fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section id="education">
-            <h1>EDUCATION</h1>
-            <hr>
-            <div class="degree">
-                <div class="degree_bachelor">
-                    <p class="title"><b>Nanjing University</b>&emsp;2015-2020</p>
-                    <p>Bachelor of Engineering in Architecture</p>
-                </div>
-                <div class="degree_master">
-                    <p class="title"><b>Delft University of Technology</b>&emsp;2020-2022</p>
-                    <p>Master Architecture, Urbanism and Building Sciences (track Architecture)</p>
-                    <p>Sino-Dutch Bilateral Exchange Scholarship</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="work">
-            <h1>WORK</h1>
-            <hr>
-            <div class="company">
-                <div class="work_experience">
-                    <p class="title"><b>OPEN Architecture</b>&emsp;2022-now</p>
-                    <p>Junior Architect</p>
-                </div>
-                <div class="work_experience">
-                    <p class="title"><b>BNP(Between and Partners)</b>&emsp;2020-2022</p>
-                    <p>Architectural Design Intern</p>
-                </div>
-                <div class="work_experience">
-                    <p class="title"><b>Roboticplus.AI (Shanghai) Co Ltd</b>&emsp;2020</p>
-                    <p>Parametric Construction Intern</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="award">
-            <h1>AWARD</h1>
-            <hr>
-            <table class="awards">
-                <tr>
-                    <td>Moganshan Seven Bridges Conceptual Design Competition</td>
-                    <td>Shortlist</td>
-                    <td>Individual Work</td>
-                    <td>2023</td>
-                </tr>
-        
-                <tr>
-                    <td>2022 The Architect TEAMZERO Award</td>
-                    <td>The Excellence Prize</td>
-                    <td>Individual Work</td>
-                    <td>2023</td>
-                </tr>
-                <tr>
-                    <td>Competition for Chengnan River Landscape Footbridge in Nanjing</td>
-                    <td>Nominated Awards</td>
-                    <td>Lead Architect</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>Viewing Pavilion Micro Building International Competition</td>
-                    <td>First Prize</td>
-                    <td>Individual Work</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>Jiaxing Footbridge Crossing Huancheng River and Railway Competition</td>
-                    <td>TOP 30</td>
-                    <td>Lead Architect</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>2022 International Bamboo Pavilion Design Competition </td>
-                    <td>Consolation Prize</td>
-                    <td>Team Work</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>Schematic Design of the Nodes in Central Ecological Corridor of Wuhan</td>
-                    <td>Third Prize</td>
-                    <td>Lead Architect</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>2020 Green Architecture National Design Competition</td>
-                    <td>Third Prize</td>
-                    <td>Lead Architect</td>
-                    <td>2020</td>
-                </tr>
-        
-                <tr>
-                    <td>2020 International 3D Printing & Design Competition</td>
-                    <td>Excellent Team</td>
-                    <td>Team Work</td>
-                    <td>2020</td>
-                </tr>
-        
-            </table>
-        </section>
-
-        <section id="award_iphone">
-            <h1>AWARD</h1>
-            <hr>
-            <div class="award_name">
-                <div class="award_single">
-                    <p class="award_title"><b>Moganshan Seven Bridges Conceptual Design Competition</b>&emsp;2023</p>
-                    <p>Shortlist | Individual Work</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>The Architect TEAMZERO Award</b>&emsp;2022</p>
-                    <p>	The Excellence Prize | Individual Work</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>Competition for Chengnan River Landscape Footbridge in Nanjing</b>&emsp;2022</p>
-                    <p>	Nominated Awards | Lead Architect</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>Viewing Pavilion Micro Building International Competition</b>&emsp;2022</p>
-                    <p>	First Prize | Individual Work</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>Jiaxing Footbridge Crossing Huancheng River and Railway Competition</b>&emsp;2022</p>
-                    <p>	TOP 30 | Lead Architect</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>International Bamboo Pavilion Design Competition</b>&emsp;2022</p>
-                    <p>	Consolation Prize | Team Work</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>Schematic Design of the Nodes in Central Ecological Corridor of Wuhan</b>&emsp;2022</p>
-                    <p>	Third Prize | Lead Architect</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>Green Architecture National Design Competition</b>&emsp;2020</p>
-                    <p>	Third Prize | Lead Architect</p>
-                </div>
-                <div class="award_single">
-                    <p class="award_title"><b>International 3D Printing & Design Competition</b>&emsp;2020</p>
-                    <p>	Excellent Team | Team Work</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="research">
-            <h1>RESEARCH</h1>
-            <hr>
-            <table class="research_experience">
-                <tr>
-                    <td>9th Bi-City Biennale of Urbanism\Architecture</td>
-                    <td>Short-term Installation Design Research</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>DigitalFUTURES2022 Workshop</td>
-                    <td>Robotic Manufacturing of Timber Space-frames</td>
-                    <td>2022</td>
-                </tr>
-        
-                <tr>
-                    <td>DigitalFUTURES2020 Workshop</td>
-                    <td>HI-Cy: Hybrid Intelligence Cy-Matters</td>
-                    <td>2020</td>
-                </tr>
-        
-                <tr>
-                    <td>DigitalFUTURES2019 Workshop</td>
-                    <td>Form Finding via Machine Learning</td>
-                    <td>2019</td>
-                </tr>
-        
-                <tr>
-                    <td>2019 International Conference on Computational Design & Robotic Fabrication</td>
-                    <td>Second Author, ”Application of Algorithmic Generation to Kindergarten Design” Research Paper </td>
-                    <td>2019</td>
-                </tr>
-        
-                <tr>
-                    <td>Cinematic Museum of the Everyday</td>
-                    <td>A Workshop on Cinematic Architecture </td>
-                    <td>2019</td>
-                </tr>
-        
-                <tr>
-                    <td>Undergraduate Academic Research Program, Nanjing University</td>
-                    <td>Gender Studies </td>
-                    <td>2019</td>
-                </tr>
-                
-                <tr>
-                    <td>Artificial Intelligence Interaction Workshop</td>
-                    <td>Building interactive experience in VR through 3DUnity</td>
-                    <td>2019</td>
-                </tr>
-        
-            </table>
-        
-        </section>
-
-        <section id="research_iphone">
-            <h1>RESEARCH</h1>
-            <hr>
-            <div class="research_name">
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        9th Bi-City Biennale of Urbanism\Architecture</b>&emsp;2022</p>
-                    <p>Short-term Installation Design Research</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        DigitalFUTURES2022 Workshop</b>&emsp;2022</p>
-                    <p>Robotic Manufacturing of Timber Space-frames</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        DigitalFUTURES2020 Workshop</b>&emsp;2020</p>
-                    <p>HI-Cy: Hybrid Intelligence Cy-Matters</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        DigitalFUTURES2019 Workshop</b>&emsp;2019</p>
-                    <p>Form Finding via Machine Learning</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        2019 International Conference on Computational Design & Robotic Fabrication</b>&emsp;2019</p>
-                    <p>Second Author, ”Application of Algorithmic Generation to Kindergarten Design” Research Paper</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        Cinematic Museum of the Everyday</b>&emsp;2019</p>
-                    <p>A Workshop on Cinematic Architecture</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        Undergraduate Academic Research Program, Nanjing University</b>&emsp;2019</p>
-                    <p>Gender Studies</p>
-                </div>
-                <div class="research_single">
-                    <p class="research_title"><b>
-                        Artificial Intelligence Interaction Workshop</b>&emsp;2019</p>
-                    <p>Building interactive experience in VR through 3DUnity</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- back to top button  -->
-        <a href="#" class="back_to_top">
-            <span class="material-symbols-outlined">
-                arrow_upward
-                </span>
-        </a>
+        </div>
     </main>
-
-    
-    <footer>
-        <p>© copyright zilinzhoudesign.com</p>
-    </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
+</html> 
