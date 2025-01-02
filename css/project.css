@@ -1,0 +1,524 @@
+/* 项目标题区域 */
+.project-title-section {
+    position: sticky;
+    top: 80px;
+    z-index: 900;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--side-padding);
+    background: var(--background-color);
+}
+
+.project-title-sticky {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* 项目内容区域 */
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem var(--side-padding);
+    position: relative;
+}
+
+/* 左侧项目说明 */
+.project-description,
+.project-text,
+.detail-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.project-text {
+    margin: 0;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    /* 隐藏项目页面的筛选按钮栏 */
+    .filter-bar {
+        display: none; /* 在移动端完全隐藏筛选栏 */
+    }
+
+    .project-title-section {
+        top: 48px;
+    }
+
+    .project-title-sticky {
+        padding: 0.5rem 0;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem var(--side-padding-mobile);
+    }
+
+    /* 删除重复的样式定义，统一放在这里 */
+    .project-text,
+    .project-description,
+    .detail-text p {
+        font-size: 0.7rem;
+        line-height: 1.5;
+        opacity: 0.9;
+    }
+
+    .project-info-sidebar {
+        padding-left: 0;
+        border-left: none;
+        font-size: 0.7rem;
+    }
+
+    .info-section h3 {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+        opacity: 0.7;
+        font-weight: 600;
+    }
+
+    .info-section p {
+        font-size: 0.7rem;
+        line-height: 1.3;
+        opacity: 0.9;
+    }
+
+    /* 详细内容区域 */
+    .project-detail-section {
+        margin-top: 2rem;
+        gap: 2rem;
+        padding: 0 var(--side-padding-mobile);
+    }
+
+    /* 标题大小保持一致 */
+    .detail-text h2,
+    .recommended-projects h2,
+    .detail-row-scroll .detail-text h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+        font-weight: 600;
+        opacity: 0.95;
+    }
+
+    .detail-row-text-image,
+    .detail-row-image-text {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 推荐项目部分 */
+    .recommended-projects {
+        margin-top: 2rem;
+    }
+
+    .recommended-card h3 {
+        font-size: 0.75rem;
+    }
+
+    /* 横向滚动图片组的间距调整 */
+    .detail-row-scroll {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 推荐项目部分的间距调整 */
+    .recommended-projects {
+        margin-top: 2rem;
+    }
+}
+
+/* 项目详细内容区域 */
+.project-detail-section {
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    margin: 6rem auto 0;
+    padding: 0 var(--side-padding);
+    display: grid;
+    gap: 8rem;
+}
+
+/* 左文右图布局 */
+.detail-row-text-image {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+/* 左图右文布局 */
+.detail-row-image-text {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+/* 文字内容样式 */
+.detail-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+}
+
+.detail-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+.detail-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* 图片容器样式 */
+.detail-image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* 改为 contain 以保持图片比例 */
+    display: block;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .project-detail-section {
+        margin-top: 2rem;
+        gap: 2rem;
+        padding: 0 var(--side-padding-mobile);
+    }
+
+    .detail-row-text-image,
+    .detail-row-image-text {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .detail-text {
+        font-size: 0.7rem;
+    }
+
+    .detail-text h2 {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .detail-text p {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+} 
+
+/* 右侧信息栏 - 桌面端样式 */
+.project-info-sidebar {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+}
+
+.info-section h3 {
+    font-size: 1.1rem; /* 增大桌面端标题字体 */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.info-section p {
+    font-size: 1rem; /* 增大桌面端内容字体 */
+    line-height: 1.6;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    /* 移动端信息栏样式 */
+    .project-info-sidebar {
+        padding-left: 0;
+        border-left: none;
+        font-size: 0.7rem;
+    }
+
+    .info-section {
+        margin-bottom: 1rem;
+    }
+
+    .info-section h3 {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+        opacity: 0.7;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+    }
+
+    .info-section p {
+        font-size: 0.7rem;
+        line-height: 1.3;
+        opacity: 0.9;
+    }
+}
+
+/* 项目封面图容器 */
+.project-hero {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--side-padding);
+}
+
+.project-hero-image-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;  /* 16:9 比例 */
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.project-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .project-hero {
+        padding: 0 var(--side-padding-mobile);
+    }
+}
+
+/* 默认隐藏所有语言版本 */
+.project-title span,
+.project-text p,
+.info-section h3 span,
+.info-section p span,
+.detail-text h2 span,
+.detail-text h3 span,
+.detail-text p span,
+.recommended-projects h2 span,
+.recommended-card h3 span {
+    display: none;
+}
+
+/* 只显示当前语言的文本 */
+.project-title span.active,
+.project-text p.active,
+.info-section h3 span.active,
+.info-section p span.active,
+.detail-text h2 span.active,
+.detail-text h3 span.active,
+.detail-text p span.active,
+.recommended-projects h2 span.active,
+.recommended-card h3 span.active {
+    display: block;
+}
+
+/* 推荐项目部分 */
+.recommended-projects {
+    max-width: 1500px;
+    width: 100%;
+    margin: 8rem auto 0;
+    padding: 0 var(--side-padding);
+}
+
+.recommended-projects h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 800px; /* 限制整体宽度 */
+    margin: 0; /* 移除 auto，改为左对齐 */
+}
+
+.recommended-card {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: opacity 0.3s ease;
+}
+
+.recommended-card:hover {
+    opacity: 0.8;
+}
+
+.recommended-image-container {
+    width: 100%;
+    position: relative;
+    padding-top: 66.67%; /* 3:2 比例 */
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.recommended-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommended-card h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .recommended-projects {
+        margin-top: 4rem;
+        padding: 0 var(--side-padding-mobile);
+    }
+
+    .recommended-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .recommended-projects h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .recommended-card h3 {
+        font-size: 0.8rem; /* 移动端字体更小 */
+    }
+}
+
+/* 横向滚动图片组样式 */
+.detail-row-scroll {
+    width: 100%;
+    margin-bottom: 4rem;
+    overflow: hidden; /* 防止超出部分影响布局 */
+}
+
+.scroll-container {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.scroll-wrapper {
+    display: flex;
+    gap: 2rem; /* 增加图片间距 */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 2rem;
+    padding-bottom: 20px; /* 为滚动条预留空间 */
+    cursor: grab;
+    user-select: none; /* 防止文本选择 */
+    transition: scroll-left 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-item {
+    flex: 0 0 auto; /* 改为auto，让内容决定宽度 */
+    height: 400px; /* 固定高度 */
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.scroll-item img {
+    height: 100%;
+    width: auto; /* 让宽度自适应 */
+    object-fit: contain;
+    background: transparent; /* 透明背景 */
+    pointer-events: none; /* 防止图片干扰拖动 */
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .scroll-item {
+        height: 250px; /* 移动端降低高度 */
+    }
+    
+    .scroll-wrapper {
+        gap: 1rem; /* 移动端减小间距 */
+    }
+}
+
+/* 滚动指示器样式 */
+.scroll-indicator {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0 0;
+}
+
+.scroll-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 33.333%;
+    background: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .scroll-arrow {
+        display: none; /* 在移动端隐藏箭头 */
+    }
+}
+
+/* 移除悬停效果的背景色变化 */
+.scroll-arrow:hover {
+    transform: scale(1.1);
+}
+
+.scroll-wrapper:active {
+    cursor: grabbing;
+}
